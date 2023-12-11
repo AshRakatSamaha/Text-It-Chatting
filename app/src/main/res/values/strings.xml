@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Text It Chatting</string>
+    <string name="log_in_to_chatbox">Log in to Chatbox</string>
+    <string name="or">OR</string>
+    <string name="your_email">Your email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="address_of_login">Welcome back! Sign in using your social \n account or email to continue us</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="address_of_signup">Get chatting with friends and family \n today by signing up for our chat app!</string>
+    <string name="confirm_password">Confirm Password</string>
+</resources>

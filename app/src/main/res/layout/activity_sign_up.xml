@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SignUpActivity"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_address_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_96sdp"
+            android:fontFamily="@font/poppins_thin"
+            android:text="Sign up with Email"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/address_of_signup"
+            android:textAlignment="center"
+            android:textColor="@color/secondary_color"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@id/tv_address_login"
+            app:layout_constraintStart_toStartOf="@id/tv_address_login"
+            app:layout_constraintTop_toBottomOf="@id/tv_address_login" />
+
+        <TextView
+            android:id="@+id/tv_nameSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_24sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="your name"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/ed_nameSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.514"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nameSignup" />
+
+        <TextView
+            android:id="@+id/tv_emailSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_24sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/your_email"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_nameSignup" />
+
+        <EditText
+            android:id="@+id/ed_emailSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_emailSignup" />
+
+        <TextView
+            android:id="@+id/tv_passSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_24sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/password"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_emailSignup" />
+
+        <EditText
+            android:id="@+id/ed_passSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_passSignup" />
+        <TextView
+            android:id="@+id/tv_confirmPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_24sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/confirm_password"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ed_passSignup" />
+
+        <EditText
+            android:id="@+id/ed_confirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:backgroundTint="@color/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_confirmPass" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCreateAccount"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_24sdp"
+            android:background="@drawable/button_design_auth"
+            android:fontFamily="@font/poppins_extrabold"
+            android:text="@string/create_an_account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
