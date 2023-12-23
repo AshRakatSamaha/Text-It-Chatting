@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -49,5 +50,14 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     // intuit
     implementation("com.intuit.sdp:sdp-android:1.0.6")
+    //navigation
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    //circle image
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    //viewPager
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+
 
 }
